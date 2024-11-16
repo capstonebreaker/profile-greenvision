@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes gradientMove {
+    0% {
+      background-position: 100% 50%; /* Gradien mulai dari kanan */
+    }
+    100% {
+      background-position: 0% 50%; /* Gradien bergerak ke kiri */
+    }
+  }
+  
+  .animate-text {
+    background: linear-gradient(90deg, #01470B, #00FF24,#01470B, #00FF24);
+    background-size: 400% 400%;  /* Membuat gradien cukup besar untuk bergerak */
+    animation: gradientMove 4s ease infinite;  /* Durasi 5 detik dan animasi berulang */
+    -webkit-background-clip: text; /* Membuat gradien hanya untuk teks */
+    color: transparent;  /* Membuat teks transparan agar hanya gradien yang terlihat */
+  }
+  
+  
