@@ -1,19 +1,18 @@
 import React from 'react';
 import HeroImg from "../../../public/assets/hero.png";
 import Logo from "../../../public/assets/logo.png";
-import NavbarHero from '../../components/NavbarHero';
+
 
 function Hero() {
   return (
-    <div className="relative w-full h-screen z-10">
-      <NavbarHero />
+    <div className="w-full h-screen z-10">
       <img
         src={HeroImg}
         alt="Hero Background"
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="absolute top-0 left-0 w-full h-[930px] object-cover"
       />
 
-      <div className="absolute top-0 left-0 w-full h-full bg-green-950 opacity-30"></div>
+      <div className="absolute top-0 left-0 w-full h-[930px] bg-green-950 opacity-30"></div>
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full p-8 container mx-auto text-primary_text">
         <img src={Logo} alt="GreenVision" />
