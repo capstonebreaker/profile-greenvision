@@ -1,5 +1,5 @@
 import React from 'react'
-import Mockup from '../../../public/assets/mockupGV.png'
+import Mockup from '/assets/mockupGV.png'
 
 function Feature() {
     return (

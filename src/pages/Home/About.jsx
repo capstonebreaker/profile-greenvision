@@ -1,12 +1,12 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { FadeUp } from '../../untility/animation'
-import Img1 from '../../../public/assets/img1.png'
-import Img2 from '../../../public/assets/img2.png'
-import Img3 from '../../../public/assets/img3.png'
-import ImgP1 from '../../../public/assets/p-img1.png'
-import ImgP2 from '../../../public/assets/p-img2.png'
-import ImgP3 from '../../../public/assets/p-img3.png'
+import Img1 from '/assets/img1.png'
+import Img2 from '/assets/img2.png'
+import Img3 from '/assets/img3.png'
+import ImgP1 from '/assets/p-img1.png'
+import ImgP2 from '/assets/p-img2.png'
+import ImgP3 from '/assets/p-img3.png'
 
 function About() {
     return (
