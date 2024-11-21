@@ -9,10 +9,9 @@ function NavbarHero() {
   const navList = [
     { name: "Home", url: "/" },
     { name: "About us", url: "/about" },
-    { name: "Our Product", url: "/product" },
-    { name: "Projects", url: "/project" },
-    { name: "News", url: "/news" },
-    { name: "Contact Us", url: "/contact" },
+    { name: "Features", url: "/product" },
+    { name: "Workflow", url: "/project" },
+    { name: "Our Team", url: "/news" },
   ];
 
   // Fungsi untuk menghandle scroll
