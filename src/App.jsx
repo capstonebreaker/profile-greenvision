@@ -4,16 +4,18 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Index from './route';
 // import About from './pages/About';
 import Home from './pages/Home/Home'
+import UnderMaintenance from './pages/UnderMaintenance';
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Index />}>
+        {/* <Route path="/" element={<Index />}>
           <Route index element={< Home/>} />
-          {/* <Route path="/about" element={<About />} /> */}
-          {/* <Route path="*" element={<ErrorPage />} /> */}
-        </Route>
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Route> */}
+        <Route path="/" element={<UnderMaintenance/>} />
       </Routes>
     </Router>
   );

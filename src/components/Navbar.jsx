@@ -43,7 +43,7 @@ function NavbarHero() {
           {navList.map((items, index) => {
             return (
               <div className="my-2" key={index}>
-                <Link className="text-white hover:text-gray-600" to={items.url}>{items.name}</Link>
+                <Link className="text-white hover:text-second_text" to={items.url}>{items.name}</Link>
               </div>
             );
           })}
