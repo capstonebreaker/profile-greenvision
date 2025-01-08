@@ -17,6 +17,7 @@ function Feature() {
             />
           </div>
 
+          {/* misal */}
           <div className="w-1/2 space-y-5 pr-16 ">
             <div className="relative bg-gradient-to-r from-white/40 via-white/0 to-white/40 rounded-xl p-[3px] w-[619px] ml-10">
               <div className="bg-[#3D5649] bg-opacity-80 h-auto pt-4 pb-6 px-24 rounded-xl shadow-lg">
