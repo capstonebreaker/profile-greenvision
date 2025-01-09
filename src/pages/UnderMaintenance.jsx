@@ -1,4 +1,3 @@
-import React from "react";
 import Mockup from '/assets/mockupGV.png';
 import Countdown from "../components/Countdown";
 
