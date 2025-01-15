@@ -6,19 +6,25 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'Cormorant': ['Cormorant Upright', 'sans-serif'],
-      'opensans': ['Open Sans', 'sans-serif'],
+      Cormorant: ['Cormorant Upright', 'sans-serif'],
+      opensans: ['Open Sans', 'sans-serif'],
+      poppins: ["Poppins", "sans-serif"],
+      Bokor: ["Bokor", "serif"]
+
     },
     extend: {
-      colors:{
+      colors: {
         primary_bg: '#334B35',
         second_bg: '#0CFF2E',
         aksen_bg: '#6D8C54',
+        th_text: '#DCCA87',
         primary_text: '#FFFFFF',
         second_text: '#F7C35F',
         aksen_text: '#67C900'
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 }

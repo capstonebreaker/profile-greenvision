@@ -2,7 +2,7 @@ import Mockup from "/assets/mockupGV.png";
 
 function Feature() {
   return (
-    <div className="bg-[url('/assets/Background2.png')] bg-cover bg-center min-h-screen">
+    <div id="feature" className="bg-[url('/assets/Background2.png')] bg-cover bg-center min-h-screen">
       <div className="container mx-auto py-16">
         <div className="text-center mb-24">
           <h2 className="text-white text-4xl font-bold">Features</h2>

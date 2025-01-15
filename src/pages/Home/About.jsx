@@ -10,7 +10,7 @@ import ImgP3 from '/assets/p-img3.png'
 
 function About() {
     return (
-        <div class="bg-[url('/assets/Background1.png')] bg-cover bg-center h-screen">
+        <div id='about' class="bg-[url('/assets/Background1.png')] bg-cover bg-center h-screen">
             <div class="absolute flex right-0 left-0 justify-center space-x-20 z-10">
                 <img src={Img1} alt="Gambar 1" class="w-[150px] h-[250px]" />
                 <img src={Img2} alt="Gambar 2" class="w-[150px] h-full" />

@@ -4,46 +4,28 @@ import Logo from "/assets/logo.png";
 
 function NavbarHero() {
   const [toggle, setToggle] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false); // State untuk deteksi scroll
+
 
   const navList = [
     { name: "Home", url: "/" },
-    { name: "About us", url: "/about" },
-    { name: "Features", url: "/product" },
-    { name: "Workflow", url: "/project" },
-    { name: "Our Team", url: "/news" },
+    { name: "About us", url: "#about" },
+    { name: "Features", url: "#feature" },
+    { name: "Our Team", url: "#team" },
   ];
-
-  // Fungsi untuk menghandle scroll
-  const handleScroll = () => {
-    if (window.scrollY > 850) {
-      setIsScrolled(true); // Jika sudah scroll lebih dari 50px
-    } else {
-      setIsScrolled(false); // Kembali ke posisi awal
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   const handleToggleSidebar = () => {
     setToggle(!toggle);
   };
 
   return (
-    <div className={`fixed top-0 left-0 w-full z-20 transition-all mt-12 `}>
-      <div className={`container mx-auto flex flex-wrap md:flex-nowrap justify-between border rounded-full p-4 items-center  ${isScrolled ? 'bg-primary_bg shadow-md' : 'bg-transparent'}`}>
+      <div className='sticky top-0 left-0 w-full z-20 transition-transform duration-300 mt-12 backdrop-blur-sm'>
+      <div className={`container mx-auto flex flex-wrap md:flex-nowrap justify-between border rounded-full p-4 items-center`}>
         <a className='ml-6' href="/"><img src={Logo} alt="greenvision" /></a>
         <div className="hidden md:flex items-center gap-12">
           {navList.map((items, index) => {
             return (
               <div className="my-2" key={index}>
-                <Link className="text-white hover:text-second_text" to={items.url}>{items.name}</Link>
+                <a className="text-white hover:text-second_text" href={items.url}>{items.name}</a>
               </div>
             );
           })}
@@ -67,7 +49,7 @@ function NavbarHero() {
           )}
         </div>
         <div className="p-1 rounded-lg">
-          <div className='bg-[#87e934] p-2 rounded-full px-4'>
+          <div className='bg-[#314632] text-white p-2 rounded-full px-4'>
             <a href="/register">Contact Us</a>
           </div>
         </div>  

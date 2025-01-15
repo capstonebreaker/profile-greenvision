@@ -5,14 +5,14 @@ import Logo from "/assets/logo.png";
 
 function Hero() {
   return (
-    <div className="w-full h-screen z-10">
+    <div id='hero' className="w-full h-screen z-10">
       <img
         src={HeroImg}
         alt="Hero Background"
-        className="absolute top-0 left-0 w-full h-[930px] object-cover"
+        className="absolute top-0 left-0 w-full h-[1165px] object-cover"
       />
 
-      <div className="absolute top-0 left-0 w-full h-[930px] bg-green-950 opacity-30"></div>
+      <div className="absolute top-0 left-0 w-full h-[1165px] bg-green-950 opacity-30"></div>
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full p-8 container mx-auto text-primary_text">
         <img src={Logo} alt="GreenVision" />
