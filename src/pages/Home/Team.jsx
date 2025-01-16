@@ -1,7 +1,13 @@
 import React from 'react'
 import Vektor from '/assets/star.png'
 import Muhit from '/assets/Muhit.png'
-
+import Aqna from '/assets/aqna1.png'
+import Bais from '/assets/bais1.png'
+import Dapa from '/assets/dapa1.png'
+import Muhit1 from '/assets/muhit1.png'
+import Aqna2 from '/assets/aqna.png'
+import Bais3 from '/assets/bais.png'
+import Dapa4 from '/assets/dapa.png'
 function Team() {
     // const teamMembers = [
     //     {
@@ -47,9 +53,9 @@ function Team() {
                         <div className="relative text-white mt-12">
                             <div className='right-10 w-26 h-26 rounded-full overflow-hidden absolute -bottom-16 transform -translate-x-1/2 border-[12px] border-gray-300'>
                                 <img
-                                    src="/assets/pteams.png"
+                                    src={Muhit1}
                                     alt="baisganteng"
-                                    className="w-full h-full object-cover"
+                                    className="w-[100px] h-[100px] object-cover"
                                 />
                             </div>
                             <div className="flex bg-[url('/assets/Bg-teams.png')] w-[680px] h-[226px] items-center text-center">
@@ -65,69 +71,65 @@ function Team() {
                         </div>
                         {/* baisganteng */}
                         <div className="relative text-white mt-32">
-                            <div className='left-40 scale-x-[-1] w-26 h-26 rounded-full overflow-hidden absolute -bottom-12 transform -translate-x-1/2 border-[12px] border-gray-300'>
+                            <div className='left-40 scale-x-[-1] w-26 h-26 rounded-full overflow-hidden absolute -bottom-16 transform -translate-x-1/2 border-[12px] border-gray-300'>
                                 <img
-                                    src="/assets/pteams.png"
+                                    src={Aqna}
                                     alt="baisganteng"
-                                    className="w-full h-full object-cover"
+                                    className="w-[100px] h-[100px] object-top"
                                 />
                             </div>
                             <div className="justify-center flex bg-[url('/assets/Bg-teams.png')] w-[680px] h-[226px] items-center text-center">
-                                {/* <div>
-                                    <img className='h-[350px] mb-32' src="/assets/pteams.png" alt="" />
-                                </div> */}
-                                <div>
-                                    <h3 className="text-2xl font-bold">baisganteng</h3>
+                                <div className='text-left absolute left-24 mb-5'>
+                                    <p className="text-lg font-semibold italic">UI/UX Design</p>
+                                    <div className='border border-white'/>
+                                    <p className="text-lg font-semibold">GreenVision</p>
                                 </div>
-                                <div>
-                                    <p className="text-lg">frontend</p>
-                                    <p className="text-sm">GreenVision</p>
-                                </div>
+                                <div className='absolute right-8'>
+                                <img className='mb-12' src={Aqna2} alt="" />
+                               </div>
+                               
                             </div>
                         </div>
                     </div>
                     <div className=''>
                         {/* daffa */}
                         <div className="relative text-white mt-12">
-                            <div className='left-40 scale-x-[-1] *:w-26 h-26 rounded-full overflow-hidden absolute -bottom-12 transform -translate-x-1/2 border-[12px] border-gray-300'>
+                            <div className='left-40 scale-x-[-1] *:w-26 h-26 rounded-full overflow-hidden absolute -bottom-16 transform -translate-x-1/2 border-[12px] border-gray-300'>
                                 <img
-                                    src="/assets/pteams.png"
+                                    src={Bais}
                                     alt="baisganteng"
-                                    className="w-full h-full object-cover"
+                                    className="w-[100px] h-[100px] object-top"
                                 />
                             </div>
                             <div className="justify-center flex bg-[url('/assets/Bg-teams.png')] w-[680px] h-[226px] items-center text-center">
-                                {/* <div>
-                                    <img className='h-[350px] mb-32' src="/assets/pteams.png" alt="" />
-                                </div> */}
-                                <div>
-                                    <h3 className="text-2xl font-bold">daffatawon</h3>
-                                </div>
-                                <div>
-                                    <p className="text-lg">frontend</p>
-                                    <p className="text-sm">GreenVision</p>
-                                </div>
+                                 <div className='text-left absolute left-24 mb-5'>
+                                    <p className="text-lg font-semibold italic">Frontend Developer</p>
+                                    <div className='border border-white'/>
+                                    <p className="text-lg font-semibold">GreenVision</p>
+                                  </div>
+                                 <div className='absolute right-8'>
+                                <img className='mb-12' src={Bais3} alt="" />
+                                 </div>
+                              
                             </div>
                         </div>
                         {/* muhit */}
                         <div className="relative text-white mt-32">
-                            <div className='right-10 w-26 h-26 rounded-full overflow-hidden absolute -bottom-12 transform -translate-x-1/2 border-[12px] border-gray-300'>
+                            <div className='right-10 w-26 h-26 rounded-full overflow-hidden absolute -bottom-16 transform -translate-x-1/2 border-[12px] border-gray-300'>
                                 <img
-                                    src="/assets/pteams.png"
+                                    src={Dapa}
                                     alt="baisganteng"
-                                    className="w-full h-full object-cover"
+                                    className="w-[100px] h-[100px] object-top"
                                 />
                             </div>
                             <div className="justify-center flex bg-[url('/assets/Bg-teams.png')] w-[680px] h-[226px] items-center text-center">
-                                {/* <div>
-                                    <img className='h-[350px] mb-32' src="/assets/pteams.png" alt="" />
-                                </div> */}
                                 <div>
-                                    <h3 className="text-2xl font-bold">muhit gun shop</h3>
-                                </div>
-                                <div>
-                                    <p className="text-lg">frontend</p>
-                                    <p className="text-sm">GreenVision</p>
+                                <img className='mb-12 mr-32' src={Dapa4} alt="" />
+                               </div>
+                               <div className='text-right absolute right-24 mb-5'>
+                                    <p className="text-lg font-semibold italic">Backend Developer</p>
+                                    <div className='border border-white'/>
+                                    <p className="text-lg font-semibold">GreenVision</p>
                                 </div>
                             </div>
                         </div>
